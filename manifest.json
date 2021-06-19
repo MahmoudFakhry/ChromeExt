@@ -4,13 +4,13 @@
     "version": "1.0",
     "description": "The fast solution to tedious tabs.",
     "icons": {
-        "128": "icon128.png",
-        "48": "icon48.png",
-        "16": "icon16.png" 
+        "128": "tab_logo128.png",
+        "48": "tab_logo128.png",
+        "16": "tab_logo16.png" 
     },
     "browser_action": {
         "default_title": "Open a new tab next to the current one",
-        "default_icon": "icon16.png",
+        "default_icon": "tab_logo128.png",
         "default_popup": "popup.html"
     },
     "commands": {
@@ -52,8 +52,8 @@
 
         "left-tab-1": {
             "suggested_key": {
-                "default": "Ctrl+Shift+1",
-                "mac": "MacCtrl+Shift+1"
+                "default": "Ctrl+1",
+                "mac": "MacCtrl+1"
             },
             "description": "Open tab 1 space to the left."
         },
@@ -93,5 +93,8 @@
         "scripts": [
             "popup.js"
         ]
-    }
+    },
+    "permissions": [
+        "activeTab"
+    ]
 }
